@@ -1,76 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./w3.css"> 
-    <title>willcmcd portfolio</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will McDonald Portfolio</title>
     <style>
-        body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-        .first-color { background: #ececec; }
-        .first-color-hover:hover { background: #ececec !important; }
-
-        .second-color {  background: #9fd3c7; }
-        .second-color-hover:hover { background: #9fd3c7 !important; }
-
-        .third-color { background: #385170; }
-        .third-color-hover:hover { background: #385170 !important; }
-
-        .fourth-color { background: #142d4c; }
-        .fourth-color-hover:hover { background: #142d4c !important; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+        }
+        .project {
+            border: 1px solid #ccc;
+            margin: 20px;
+            padding: 20px;
+        }
+        .project-image {
+          background-color: #888;
+          margin: 5px;
+          padding: 5px;
+        }
     </style>
 </head>
-
 <body>
-    <!-- <nav class="w3-sidebar w3-bar-block w3-hide-small second-color" style="width: 120px;">
-        <a href="#" class="w3-bar-item w3-button w3-padding-large">Home</a>
-        <a href="#proj-1" class="w3-bar-item w3-button w3-padding-large">Project 1</a>
-        <a href="#proj-2" class="w3-bar-item w3-button w3-padding-large">Project 2</a>
-        <a href="#proj-3" class="w3-bar-item w3-button w3-padding-large">Project 3</a>
-    </nav> -->
-    <div id="main">
-
-        <div class="w3-top">
-            <div class="w3-bar w3-medium second-color">
-                <a href="#" class="w3-bar-item w3-button">Home</a>
-                <a href="#proj-1" class="w3-bar-item w3-button third-color-hover">Project 1</a>
-                <a href="#proj-2" class="w3-bar-item w3-button third-color-hover">Project 2</a>
-                <a href="#proj-3" class="w3-bar-item w3-button third-color-hover">Project 3</a>
-            </div>
-        </div>
-
-        <!-- <div class="w3-padding-large first-color" style="margin-left: 120px;"> -->
-        <div class="w3-padding-large w3-center first-color" style="margin: 10px">
-            <div class="w3-card w3-padding-large third-color" style="margin: 10px">
-                <h1>Projects</h1>
-            </div>
-            <!-- PROJECT 1 -->
-            <div class="w3-card w3-content w3-padding-large third-color" style="margin: 10px" id="proj-1">
-                <h2>Sample Project 1</h2>
-                <div class="fourth-color" style="width: 500px; height: 250px;"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <div class="fourth-color" style="width: 500px; height: 250px;"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <!-- PROJECT 2 -->
-            <div class="w3-card w3-content w3-padding-large third-color" style="margin: 10px" id="proj-2">
-                <h2>Sample Project 2</h2>
-                <div class="fourth-color" style="width: 500px; height: 250px;"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <div class="fourth-color" style="width: 500px; height: 250px;"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <!-- PROJECT 3 -->
-            <div class="w3-card w3-content w3-padding-large third-color" style="margin: 10px" id="proj-3">
-                <h2>Sample Project 3</h2>
-                <div class="fourth-color" style="width: 500px; height: 250px;"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <div class="fourth-color" style="width: 500px; height: 250px;"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-
-        </div>
+  <header>
+    <h1>Will McDonald</h1>
+    <p>Software Engineer</p>
+  </header>
+  <section>
+    <h2>Project 1: Slime Madness</h2>
+    <div class="project">
+      <h3>2D Platformer, written in C</h3>
+      <p>
+        Slime Madness is a 2d platformer, with unique character manipulation mechanics.  The controlled player character can be split at will, and the player can select portions of itself to control.
+        This project was developed entirely in C.  We used a now open source graphics library, CProcessing (https://github.com/DigiPen-Faculty/CProcessing).  Audio implementation was completed using FMOD.
+        My contribution to this project was gameplay development.  I implemented the player controller functionality.
+      </p>
+      <h4>My Contributions:</h4>
+      <ul>
+        <li>User input</li>
+        <li>Player Selection</li>
+        <li>Split player memory management</li>
+      </ul>
+      <h3>Video Demonstration</h3>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZJvfbU9UI3A?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
-
+  </section>
+  <section>
+    <h2>Project 2: Chambers</h2>
+    <div class="project">
+        <h3>2.5D Roguelike</h3>
+        <p>
+          Paragraph about the project, how it was developed.
+        </p>
+        <h4>My Contributions:</h4>
+        <ul>
+          <li>User Testing</li>
+          <li>Contribution 2</li>
+        </ul>
+        <h3>Video Demonstration</h3>
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hJalA_aky9I?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </section>
+  <section>
+    <h2>Project 3: FFlap</h2>
+    <div class="project">
+        <h3>Project Description</h3>
+          <p>
+            FFlap began life under a different name, The Ballad of Finn.  This was the first project that I produced.  I stepped up to the plate, ascending from Associate Producer to Producer, when it became apparent that my Producer wasn't going to be able to handle the workload.
+            This project was developed in C++, using CMake, GLFW, and FMOD.
+          </p>
+          <h4>My Contributions:</h4>
+          <ul>
+            <li>Designed and Implemented Custom C++ ECS Engine</li>
+            <li>Producer</li>
+          </ul>
+        <h3>Video Demonstration</h3>
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ldfFRbRZ4YE?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </section>
+  <section>
+    <h2>Project 4: Inferno Jumpers</h2>
+    <div class="project">
+        <h3>Project Description</h3>
+          <p>
+            Inferno Jumpers was developed using Unity 2019.3.15f.  Development began in Fall 2020, completed in Winter 2021.  Due to travel restrictions, members of the team were contributing from all over the world.
+          </p>
+          <h4>My Contributions:</h4>
+          <ul>
+            <li>Producer</li>
+            <li>Telemetry Toolset</li>
+            <li>Gameplay Programmer</li>
+            <li>Optimization of Systems</li>
+          </ul>
+        <h3>Video Demonstration</h3>
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ifcGhzckCIg?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </section>
+  <section>
+    <h2>Project 5: Apocalypse Resort</h2>
+    <div class="project">
+      <h3>Project Description</h3>
+        <p>
+          I joined Apocalypse Resort for one semester.  During my time on this project, I implemented a telemetry logging solution to provide hard data for the psychology researcher we were building this project for.
+          This was my first experience with the Unreal Engine.  Being thrown into a legacy project and finding myself needing to integrate into many of the games systems to log the data specfied.  I learned significantly more tan I would have in any other introduction to this engine.
+        </p>
+        <h4>My Contributions:</h4>
+        <ul>
+          <li>Robust telemetry toolset</li>
+          <li>Data Post Processing Workflow (CSV, Python, Excel) </li>
+          <li>Player controller behavior improvements</li>
+          <li>Scripting assistance for level designer</li>
+        </ul>
+    </div>
+  </section>
 </body>
 </html>
