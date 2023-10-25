@@ -41,28 +41,51 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>Will McDonald</h1>
-    <p>Software Engineer</p>
-    <nav>
-      <a href="#about" style="color: #fff">About</a>
-      <a href="#games" style="color: #fff">Games</a>
-      <a href="#contact" style="color: #fff">Contact</a>
-    </nav>
-  </header>
 
-  <div class="page" id="featured">
+<!-- NAVIGATION -->
+<div class="w3-top">
+  <div class="w3-row w3-light-grey">
+    <h1 class="w3-center">Will McDonald</h1>
+    <p class="w3-center">Software Engineer</p>
+  </div>
+  <div class="w3-row w3-padding w3-light-grey">
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block">About</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#games" class="w3-button w3-block">Games</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#contact" class="w3-button w3-block">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="w3-sidebar">
+  <h1>Will McDonald</h1>
+  <p>Software Engineer</p>
+</div> -->
+
+<div class="w3-content w3-padding" style="padding-top: 35px !important;">
+
+  <div class="w3-card w3-grey">
+
+    <h1 class="w3-center">Will McDonald</h1>
+    <p class="w3-center">Software Engineer</p>
+  </div>
+
+  <div class="w3-card w3-grey" id="featured">
     <h1>Featured Project</h1>
     <p>Inferno Jumpers is my hero project. Developed in Unity, produced by me. The combined efforts of 15 students.</p>
     <a href="#game-4"> SEE MORE </a>
   </div>
 
-  <div class="page" id="about">
+  <div class="w3-card w3-grey" id="about">
     <h1>About Me</h1>
     <p>I'm a software engineer pursuing a career in the automotive, hardware, and game development fields.</p>
   </div>
 
-  <div class="page" id="games">
+  <div class="w3-card w3-grey" id="games">
     <h1>Game Projects</h1>
 
     <section id="game-1">
@@ -160,9 +183,11 @@
     </section>
   </div>
 
-  <div class="page" id="contact">
+  <div class="w3-card w3-grey" id="contact">
     <h1> Contact Me </h1>
     <p>I've set aside the email address asdf@gmail.com for the purposes of contacting me.</p>
   </div>
+</div>
+
 </body>
 </html>
