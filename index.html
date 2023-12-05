@@ -1,74 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Will McDonald Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        section {
-            padding: 20px;
-        }
-        .header-text {
-          color: #fff
-        }
-        .page {
-          background-color: #d7d7d7;
-          margin: 5px;
-          padding: 5px;
-        }
-        .project {
-            border: 1px solid #ccc;
-            margin: 10px;
-            padding: 10px;
-        }
-        .project-image {
-          background-color: #888;
-          margin: 5px;
-          padding: 5px;
-        }
-
-    </style>
+  <title>Will McDonald Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./w3.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 20px;
+    }
+    .header-text {
+      color: #fff
+    }
+    .page {
+      background-color: #d7d7d7;
+      margin: 5px;
+      padding: 5px;
+    }
+    .project {
+      border: 1px solid #ccc;
+      margin: 10px;
+      padding: 10px;
+    }
+    .project-image {
+      background-color: #888;
+      margin: 5px;
+      padding: 5px;
+    }
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%;
+    }
+    .video-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Will McDonald</h1>
-    <p>Software Engineer</p>
-    <nav>
-      <a href="#about" style="color: #fff">About</a>
-      <a href="#games" style="color: #fff">Games</a>
-      <a href="#contact" style="color: #fff">Contact</a>
-    </nav>
-  </header>
 
-  <div class="page" id="featured">
+<!-- NAVIGATION -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-light-grey">
+    <div class="w3-col s4">
+      <a href="#about" class="w3-button w3-block">About</a>
+    </div>
+    <div class="w3-col s4">
+      <a href="#games" class="w3-button w3-block">Games</a>
+    </div>
+    <div class="w3-col s4">
+      <a href="#contact" class="w3-button w3-block">Contact</a>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row" style="padding-top: 75px;">
+  <h1 class="w3-center">Will McDonald</h1>
+  <p class="w3-center">Software Engineer</p>
+</div>
+
+<div class="w3-content w3-padding" style="padding-top: 35px !important;">
+  <div class="w3-card w3-white" id="featured">
     <h1>Featured Project</h1>
     <p>Inferno Jumpers is my hero project. Developed in Unity, produced by me. The combined efforts of 15 students.</p>
     <a href="#game-4"> SEE MORE </a>
   </div>
 
-  <div class="page" id="about">
+  <div class="w3-card w3-white" id="about">
     <h1>About Me</h1>
     <p>I'm a software engineer pursuing a career in the automotive, hardware, and game development fields.</p>
   </div>
 
-  <div class="page" id="games">
+  <div class="w3-card w3-white" id="games">
     <h1>Game Projects</h1>
 
     <section id="game-1">
-      <h2>Project 1: Slime Madness</h2>
-      <div class="project">
-        <h3>2D Platformer, written in C</h3>
+      <div class="w3-card w3-light-grey w3-padding">
+        <h2>Slime Madness</h2>
+        <h3>Custom Engine Novel 2D Platformer</h3>
+        <div class="video-container">
+          <iframe src="https://www.youtube-nocookie.com/embed/ZJvfbU9UI3A?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="video-content" allowfullscreen></iframe>
+        </div>
         <p>
           Slime Madness is a 2d platformer, with unique character manipulation mechanics.  The controlled player character can be split at will, and the player can select portions of itself to control.
           This project was developed entirely in C.  We used a now open source graphics library, CProcessing (https://github.com/DigiPen-Faculty/CProcessing).  Audio implementation was completed using FMOD.
@@ -80,90 +108,92 @@
           <li>Player Selection</li>
           <li>Split player memory management</li>
         </ul>
-        <h3>Video Demonstration</h3>
-          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZJvfbU9UI3A?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </section>
 
     <section id="game-2">
-      <h2>Project 2: Chambers</h2>
-      <div class="project">
-          <h3>2.5D Roguelike</h3>
-          <p>
-            Chambers was my first experience working on a team game project, as opposed to a group project.  I was one of five contributors on this project, working under the title of testing director.  My greatest contributions here was the development of enemy AI.
-          </p>
-          <h4>My Contributions:</h4>
-          <ul>
-            <li>Enemy AI Behaviors</li>
-            <li>User Testing</li>
-            <li>Local Multiplayer Prototype</li>
-            <li>Math Utilities</li>
-          </ul>
-          <h3>Video Demonstration</h3>
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hJalA_aky9I?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <div class="w3-card w3-light-grey w3-padding">
+        <h2>Chambers</h2>
+        <h3>Custom Engine 2.5D Roguelike</h3>
+        <div class="video-container">
+          <iframe src="https://www.youtube-nocookie.com/embed/hJalA_aky9I?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="video-content" allowfullscreen></iframe>
+        </div>
+        <p>
+          Chambers was my first experience working on a team game project, as opposed to a group project.  I was one of five contributors on this project, working under the title of testing director.  My greatest contributions here was the development of enemy AI.
+        </p>
+        <h4>My Contributions:</h4>
+        <ul>
+          <li>Enemy AI Behaviors</li>
+          <li>User Testing</li>
+          <li>Local Multiplayer Prototype</li>
+          <li>Math Utilities</li>
+        </ul>
       </div>
     </section>
 
     <section id="game-3">
-      <h2>Project 3: FFlap</h2>
-      <div class="project">
-          <h3>Project Description</h3>
-            <p>
-              FFlap began life under a different name, The Ballad of Finn.  This was the first project that I produced.  I stepped up to the plate, ascending from Associate Producer to Producer, when it became apparent that my Producer wasn't going to be able to handle the workload.
-              This project was developed in C++, using CMake, GLFW, and FMOD.
-            </p>
-            <h4>My Contributions:</h4>
-            <ul>
-              <li>Designed and Implemented Custom C++ ECS Engine</li>
-              <li>Producer</li>
-            </ul>
-          <h3>Video Demonstration</h3>
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ldfFRbRZ4YE?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <div class="w3-card w3-light-grey w3-padding">
+        <h2>FFlap</h2>
+        <h3>C++ Custom Engine 2D Collectathon</h3>
+        <div class="video-container">
+          <iframe src="https://www.youtube-nocookie.com/embed/ldfFRbRZ4YE?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="video-content" allowfullscreen></iframe>
+        </div>
+        <p>
+          FFlap began life under a different name, The Ballad of Finn.  This was the first project that I produced.  I stepped up to the plate, ascending from Associate Producer to Producer, when it became apparent that my Producer wasn't going to be able to handle the workload.
+          This project was developed in C++, using CMake, GLFW, and FMOD.
+        </p>
+        <h4>My Contributions:</h4>
+        <ul>
+          <li>Designed and Implemented Custom C++ ECS Engine</li>
+          <li>Producer</li>
+        </ul>
       </div>
     </section>
 
     <section id="game-4">
-      <h2>Project 4: Inferno Jumpers</h2>
-      <div class="project">
-          <h3>Project Description</h3>
-            <p>
-              Inferno Jumpers was developed using Unity 2019.3.15f.  Development began in Fall 2020, completed in Winter 2021.  Due to travel restrictions, members of the team were contributing from all over the world.
-            </p>
-            <h4>My Contributions:</h4>
-            <ul>
-              <li>Producer</li>
-              <li>Telemetry Toolset</li>
-              <li>Gameplay Programmer</li>
-              <li>Optimization of Systems</li>
-            </ul>
-          <h3>Video Demonstration</h3>
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ifcGhzckCIg?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <div class="w3-card w3-light-grey w3-padding">
+        <h2>Inferno Jumpers</h2>
+        <h3>Unity based Firefighting Arcade Game</h3>
+        <div class="video-container">
+          <iframe src="https://www.youtube-nocookie.com/embed/ifcGhzckCIg?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="video-content" allowfullscreen></iframe>
+        </div>
+        <p> 
+          Inferno Jumpers was developed using Unity 2019.3.15f.  Development began in Fall 2020, completed in Winter 2021.  Due to travel restrictions, members of the team were contributing from all over the world.
+        </p>
+        <h4>My Contributions:</h4>
+        <ul>
+          <li>Producer</li>
+          <li>Telemetry Toolset</li>
+          <li>Gameplay Programmer</li>
+          <li>Optimization of Systems</li>
+        </ul>
       </div>
     </section>
 
     <section id="game-5">
-      <h2>Project 5: Apocalypse Resort</h2>
-      <div class="project">
-        <h3>Project Description</h3>
-          <p>
-            I joined Apocalypse Resort for one semester.  During my time on this project, I implemented a telemetry logging solution to provide hard data for the psychology researcher we were building this project for.
-            This was my first experience with the Unreal Engine.  Being thrown into a legacy project and finding myself needing to integrate into many of the games systems to log the data specfied.  I learned significantly more tan I would have in any other introduction to this engine.
-          </p>
-          <h4>My Contributions:</h4>
-          <ul>
-            <li>Robust telemetry toolset</li>
-            <li>Data Post Processing Workflow (CSV, Python, Excel) </li>
-            <li>Player controller behavior improvements</li>
-            <li>Scripting assistance for level designer</li>
-          </ul>
+      <div class="w3-card w3-light-grey w3-padding">
+        <h2>Apocalypse Resort</h2>
+        <h3>Unreal Research Project</h3>
+        <p>
+          I joined Apocalypse Resort for one semester.  During my time on this project, I implemented a telemetry logging solution to provide hard data for the psychology researcher we were building this project for.
+          This was my first experience with the Unreal Engine.  Being thrown into a legacy project and finding myself needing to integrate into many of the games systems to log the data specfied.  I learned significantly more tan I would have in any other introduction to this engine.
+        </p>
+        <h4>My Contributions:</h4>
+        <ul>
+          <li>Robust telemetry toolset</li>
+          <li>Data Post Processing Workflow (CSV, Python, Excel) </li>
+          <li>Player controller behavior improvements</li>
+          <li>Scripting assistance for level designer</li>
+        </ul>
       </div>
     </section>
-
   </div>
 
-  <div class="page" id="contact">
+  <div class="w3-card w3-grey" id="contact">
     <h1> Contact Me </h1>
     <p>I've set aside the email address asdf@gmail.com for the purposes of contacting me.</p>
   </div>
+</div>
+
 </body>
 </html>
