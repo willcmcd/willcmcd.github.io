@@ -38,6 +38,19 @@
       margin: 5px;
       padding: 5px;
     }
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%;
+    }
+    .video-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
   </style>
 </head>
 <body>
@@ -78,9 +91,12 @@
     <h1>Game Projects</h1>
 
     <section id="game-1">
-      <h2>Project 1: Slime Madness</h2>
-      <div class="project">
+      <div class="w3-card w3-light-grey w3-padding">
+        <h2>Slime Madness</h2>
         <h3>Custom Engine Novel 2D Platformer</h3>
+        <div class="video-container">
+          <iframe src="https://www.youtube-nocookie.com/embed/ZJvfbU9UI3A?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="video-content" allowfullscreen></iframe>
+        </div>
         <p>
           Slime Madness is a 2d platformer, with unique character manipulation mechanics.  The controlled player character can be split at will, and the player can select portions of itself to control.
           This project was developed entirely in C.  We used a now open source graphics library, CProcessing (https://github.com/DigiPen-Faculty/CProcessing).  Audio implementation was completed using FMOD.
@@ -92,15 +108,16 @@
           <li>Player Selection</li>
           <li>Split player memory management</li>
         </ul>
-        <h3>Video Demonstration</h3>
-          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZJvfbU9UI3A?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </section>
 
     <section id="game-2">
-      <h2>Project 2: Chambers</h2>
-      <div class="project">
+      <div class="w3-card w3-light-grey w3-padding">
+        <h2>Chambers</h2>
         <h3>Custom Engine 2.5D Roguelike</h3>
+        <div class="video-container">
+          <iframe src="https://www.youtube-nocookie.com/embed/hJalA_aky9I?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="video-content" allowfullscreen></iframe>
+        </div>
         <p>
           Chambers was my first experience working on a team game project, as opposed to a group project.  I was one of five contributors on this project, working under the title of testing director.  My greatest contributions here was the development of enemy AI.
         </p>
@@ -111,15 +128,16 @@
           <li>Local Multiplayer Prototype</li>
           <li>Math Utilities</li>
         </ul>
-        <h3>Video Demonstration</h3>
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hJalA_aky9I?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </section>
 
     <section id="game-3">
-      <h2>Project 3: FFlap</h2>
-      <div class="project">
+      <div class="w3-card w3-light-grey w3-padding">
+        <h2>FFlap</h2>
         <h3>C++ Custom Engine 2D Collectathon</h3>
+        <div class="video-container">
+          <iframe src="https://www.youtube-nocookie.com/embed/ldfFRbRZ4YE?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="video-content" allowfullscreen></iframe>
+        </div>
         <p>
           FFlap began life under a different name, The Ballad of Finn.  This was the first project that I produced.  I stepped up to the plate, ascending from Associate Producer to Producer, when it became apparent that my Producer wasn't going to be able to handle the workload.
           This project was developed in C++, using CMake, GLFW, and FMOD.
@@ -129,16 +147,17 @@
           <li>Designed and Implemented Custom C++ ECS Engine</li>
           <li>Producer</li>
         </ul>
-        <h3>Video Demonstration</h3>
-          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ldfFRbRZ4YE?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </section>
 
     <section id="game-4">
-      <h2>Project 4: Inferno Jumpers</h2>
-      <div class="project">
+      <div class="w3-card w3-light-grey w3-padding">
+        <h2>Inferno Jumpers</h2>
         <h3>Unity based Firefighting Arcade Game</h3>
-        <p>
+        <div class="video-container">
+          <iframe src="https://www.youtube-nocookie.com/embed/ifcGhzckCIg?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="video-content" allowfullscreen></iframe>
+        </div>
+        <p> 
           Inferno Jumpers was developed using Unity 2019.3.15f.  Development began in Fall 2020, completed in Winter 2021.  Due to travel restrictions, members of the team were contributing from all over the world.
         </p>
         <h4>My Contributions:</h4>
@@ -148,14 +167,12 @@
           <li>Gameplay Programmer</li>
           <li>Optimization of Systems</li>
         </ul>
-        <h3>Video Demonstration</h3>
-          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ifcGhzckCIg?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </section>
 
     <section id="game-5">
-      <h2>Project 5: Apocalypse Resort</h2>
-      <div class="project">
+      <div class="w3-card w3-light-grey w3-padding">
+        <h2>Apocalypse Resort</h2>
         <h3>Unreal Research Project</h3>
         <p>
           I joined Apocalypse Resort for one semester.  During my time on this project, I implemented a telemetry logging solution to provide hard data for the psychology researcher we were building this project for.
